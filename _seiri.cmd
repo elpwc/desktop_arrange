@@ -6,8 +6,8 @@ cd /d %temp%
 if not exist desktop_clean_root_folder (
     md desktop_clean_root_folder
 )
-set folderlist="Í¼Æ¬,ÊÓÆµ,ÒôÆµ,ÃşÓã,ÎÄµµ,¿ª·¢,ÍøÒ³,ÆäËû"
-set imglist="jpg,png,jpeg,gif,bmp,psd,svg,webp"
+set folderlist="å›¾ç‰‡,è§†é¢‘,éŸ³é¢‘,æ‘¸é±¼,æ–‡æ¡£,å¼€å‘,ç½‘é¡µ,å…¶ä»–"
+set imglist="jpg,png,jpeg,gif,bmp,psd,svg,webp,jfif"
 set videolist="mp4,mov,3gp,flv,rmvb,swf,ogg,mvb"
 set medialist="mp3,amw,mid,wav"
 set paintlist="sai,sai2"
@@ -66,31 +66,31 @@ if not exist !array_each!_%current_time% (
 exit /b 0
 
 :foreach_array_img
-move /-y *.!array_each! Í¼Æ¬_%current_time%\
+move /-y *.!array_each! å›¾ç‰‡_%current_time%\
 exit /b 0
 
 :foreach_array_video
-move /-y *.!array_each! ÊÓÆµ_%current_time%\
+move /-y *.!array_each! è§†é¢‘_%current_time%\
 exit /b 0
 
 :foreach_array_media
-move /-y *.!array_each! ÒôÆµ_%current_time%\
+move /-y *.!array_each! éŸ³é¢‘_%current_time%\
 exit /b 0
 
 :foreach_array_paint
-move /-y *.!array_each! ÃşÓã_%current_time%\
+move /-y *.!array_each! æ‘¸é±¼_%current_time%\
 exit /b 0
 
 :foreach_array_doc
-move /-y *.!array_each! ÎÄµµ_%current_time%\
+move /-y *.!array_each! æ–‡æ¡£_%current_time%\
 exit /b 0
 
 :foreach_array_deve
-move /-y *.!array_each! ¿ª·¢_%current_time%\
+move /-y *.!array_each! å¼€å‘_%current_time%\
 exit /b 0
 
 :foreach_array_page
-move /-y *.!array_each! ÍøÒ³_%current_time%\
+move /-y *.!array_each! ç½‘é¡µ_%current_time%\
 exit /b 0
 
 
